@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "fish_and_stone",
+	"version": "${version}",
+	"name": "Fish and Stone",
+	"description": "Brings back the old fish and adds fiber-optic style bluestone from the 1.14 trailer",
+	"authors": [
+		"JayGHub"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fish_and_stone/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.jayghub.fish_and_stone.FishAndStone"
+		],
+		"client": [
+			"github.jayghub.fish_and_stone.FishAndStoneClient"
+		],
+		"fabric-datagen": [
+			"github.jayghub.fish_and_stone.FishAndStoneDataGenerator"
+		]
+	},
+	"mixins": [
+		"fish_and_stone.mixins.json",
+		{
+			"config": "fish_and_stone.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

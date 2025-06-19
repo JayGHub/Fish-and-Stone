@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "github.jayghub.fish_and_stone.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
